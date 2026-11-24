@@ -1,0 +1,12 @@
+# Python 3.10+；CPU 环境即可复现（无需 GPU）
+torch>=2.0
+transformers==4.46.3
+spacy==3.8.2
+jieba==0.42.1
+seqeval==1.2.2
+neo4j==6.4.1
+numpy==1.26.4
+scikit-learn==1.4.0
+networkx==3.7
+matplotlib==3.11.0
+pytest>=8.0

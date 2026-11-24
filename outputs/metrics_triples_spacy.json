@@ -1,0 +1,202 @@
+{
+  "overall": {
+    "precision": 1.0,
+    "recall": 0.8378,
+    "f1": 0.9118,
+    "tp": 31,
+    "fp": 0,
+    "fn": 6
+  },
+  "macro_f1": 0.8032,
+  "per_relation": {
+    "夫妻": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "gold": 5,
+      "pred": 4
+    },
+    "父子": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "gold": 1,
+      "pred": 0
+    },
+    "父女": {
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "gold": 3,
+      "pred": 2
+    },
+    "兄弟姐妹": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "gold": 2,
+      "pred": 1
+    },
+    "恋人": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "gold": 4,
+      "pred": 4
+    },
+    "暗恋": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "gold": 3,
+      "pred": 3
+    },
+    "同学": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "gold": 2,
+      "pred": 2
+    },
+    "朋友": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "gold": 1,
+      "pred": 0
+    },
+    "任职于": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "gold": 5,
+      "pred": 5
+    },
+    "就读于": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "gold": 2,
+      "pred": 2
+    },
+    "参与": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "gold": 5,
+      "pred": 4
+    },
+    "反对": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "gold": 2,
+      "pred": 2
+    },
+    "拥有": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "gold": 1,
+      "pred": 1
+    },
+    "资助": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "gold": 1,
+      "pred": 1
+    }
+  },
+  "per_doc": {
+    "doc1": {
+      "precision": 1.0,
+      "recall": 0.8667,
+      "f1": 0.9286,
+      "tp": 13,
+      "fp": 0,
+      "fn": 2
+    },
+    "doc2": {
+      "precision": 1.0,
+      "recall": 0.6923,
+      "f1": 0.8182,
+      "tp": 9,
+      "fp": 0,
+      "fn": 4
+    },
+    "doc3": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 9,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "errors": {
+    "doc1": {
+      "missing": [
+        "孙少平-朋友-田晓霞",
+        "田福堂-参与-农业学大寨"
+      ],
+      "extra": []
+    },
+    "doc2": {
+      "missing": [
+        "田润叶-兄弟姐妹-田润生",
+        "田润生-夫妻-郝红梅",
+        "田福堂-父女-田润叶",
+        "田福堂-父子-田润生"
+      ],
+      "extra": []
+    },
+    "doc3": {
+      "missing": [],
+      "extra": []
+    }
+  },
+  "pred_triples": 31
+}

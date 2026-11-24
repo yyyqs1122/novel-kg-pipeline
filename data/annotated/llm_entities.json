@@ -1,0 +1,63 @@
+{
+  "model": "Doubao / LLM (reference run, prompt v1)",
+  "generated_at": "2026-11-24",
+  "note": "会话内大模型按统一 Prompt 生成的参考结果，缓存用于可复现评估；可通过 src/llm_extract.py --refresh 调用兼容 OpenAI 的接口重新生成。",
+  "docs": {
+    "doc1": [
+      {"text": "1975年初", "type": "TIME"},
+      {"text": "孙少平", "type": "PER"},
+      {"text": "原西县高中", "type": "ORG"},
+      {"text": "郝红梅", "type": "PER"},
+      {"text": "侯玉英", "type": "PER"},
+      {"text": "顾养民", "type": "PER"},
+      {"text": "县革委", "type": "ORG"},
+      {"text": "田福军", "type": "PER"},
+      {"text": "田晓霞", "type": "PER"},
+      {"text": "孙少安", "type": "PER"},
+      {"text": "田福堂", "type": "PER"},
+      {"text": "田润叶", "type": "PER"},
+      {"text": "山西", "type": "LOC"},
+      {"text": "秀莲", "type": "PER"},
+      {"text": "李向前", "type": "PER"},
+      {"text": "旱灾", "type": "EVENT"}
+    ],
+    "doc2": [
+      {"text": "1979年春", "type": "TIME"},
+      {"text": "十一届三中全会", "type": "EVENT"},
+      {"text": "田福堂", "type": "PER"},
+      {"text": "支部会", "type": "EVENT"},
+      {"text": "责任制", "type": "EVENT"},
+      {"text": "孙少安", "type": "PER"},
+      {"text": "生产队", "type": "ORG"},
+      {"text": "公社", "type": "ORG"},
+      {"text": "孙少平", "type": "PER"},
+      {"text": "田晓霞", "type": "PER"},
+      {"text": "师专", "type": "ORG"},
+      {"text": "省报", "type": "ORG"},
+      {"text": "田润叶", "type": "PER"},
+      {"text": "团地委", "type": "ORG"},
+      {"text": "田润生", "type": "PER"},
+      {"text": "郝红梅", "type": "PER"}
+    ],
+    "doc3": [
+      {"text": "1982年", "type": "TIME"},
+      {"text": "孙少平", "type": "PER"},
+      {"text": "煤矿", "type": "LOC"},
+      {"text": "田晓霞", "type": "PER"},
+      {"text": "抗洪采访", "type": "EVENT"},
+      {"text": "田福军", "type": "PER"},
+      {"text": "孙少安", "type": "PER"},
+      {"text": "砖窑", "type": "ORG"},
+      {"text": "秀莲", "type": "PER"},
+      {"text": "小学", "type": "ORG"},
+      {"text": "田润叶", "type": "PER"},
+      {"text": "田润生", "type": "PER"},
+      {"text": "郝红梅", "type": "PER"},
+      {"text": "27岁", "type": "TIME"},
+      {"text": "事故", "type": "EVENT"},
+      {"text": "金波之妹", "type": "PER"},
+      {"text": "医院", "type": "ORG"},
+      {"text": "矿山", "type": "LOC"}
+    ]
+  }
+}

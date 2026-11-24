@@ -1,0 +1,156 @@
+{
+  "overall": {
+    "precision": 0.6296,
+    "recall": 0.3208,
+    "f1": 0.425,
+    "tp": 17,
+    "fp": 10,
+    "fn": 36
+  },
+  "macro_f1": 0.1333,
+  "per_type": {
+    "PER": {
+      "precision": 0.7083,
+      "recall": 0.6296,
+      "f1": 0.6667,
+      "tp": 17,
+      "fp": 7,
+      "fn": 10,
+      "gold": 27,
+      "pred": 24
+    },
+    "LOC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "gold": 2,
+      "pred": 0
+    },
+    "ORG": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 11,
+      "gold": 11,
+      "pred": 0
+    },
+    "TIME": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 5,
+      "gold": 5,
+      "pred": 3
+    },
+    "EVENT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8,
+      "gold": 8,
+      "pred": 0
+    }
+  },
+  "per_doc": {
+    "doc1": {
+      "precision": 0.5833,
+      "recall": 0.4118,
+      "f1": 0.4828,
+      "tp": 7,
+      "fp": 5,
+      "fn": 10
+    },
+    "doc2": {
+      "precision": 0.625,
+      "recall": 0.2778,
+      "f1": 0.3846,
+      "tp": 5,
+      "fp": 3,
+      "fn": 13
+    },
+    "doc3": {
+      "precision": 0.7143,
+      "recall": 0.2778,
+      "f1": 0.4,
+      "tp": 5,
+      "fp": 2,
+      "fn": 13
+    }
+  },
+  "errors": {
+    "doc1": {
+      "missing": [
+        "1975年初(TIME)",
+        "侯玉英(PER)",
+        "农业学大寨(EVENT)",
+        "原西县高中(ORG)",
+        "县革委(ORG)",
+        "山西(LOC)",
+        "旱灾(EVENT)",
+        "李向前(PER)",
+        "田福军(PER)",
+        "顾养民(PER)"
+      ],
+      "extra": [
+        "197(TIME)",
+        "城教(PER)",
+        "对处境(PER)",
+        "少安和润叶(PER)",
+        "田福(PER)"
+      ]
+    },
+    "doc2": {
+      "missing": [
+        "1979年春(TIME)",
+        "两年后(TIME)",
+        "公社(ORG)",
+        "十一届三中全会(EVENT)",
+        "变革(EVENT)",
+        "团地委(ORG)",
+        "师专(ORG)",
+        "支部会(EVENT)",
+        "生产队(ORG)",
+        "田润叶(PER)",
+        "田润生(PER)",
+        "省报(ORG)",
+        "责任制(EVENT)"
+      ],
+      "extra": [
+        "197(TIME)",
+        "二部(PER)",
+        "润叶远(PER)"
+      ]
+    },
+    "doc3": {
+      "missing": [
+        "1982年(TIME)",
+        "27岁(TIME)",
+        "事故(EVENT)",
+        "医院(ORG)",
+        "小学(ORG)",
+        "抗洪采访(EVENT)",
+        "煤矿(ORG)",
+        "田润生(PER)",
+        "矿山(LOC)",
+        "砖窑(ORG)",
+        "秀莲(PER)",
+        "郝红梅(PER)",
+        "金波之妹(PER)"
+      ],
+      "extra": [
+        "19(TIME)",
+        "润生和郝红梅(PER)"
+      ]
+    }
+  },
+  "pred_entity_mentions": 43
+}

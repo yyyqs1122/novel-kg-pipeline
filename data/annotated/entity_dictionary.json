@@ -1,0 +1,475 @@
+{
+  "schema": {
+    "PER": "人物",
+    "LOC": "地点",
+    "ORG": "组织机构",
+    "TIME": "时间",
+    "EVENT": "事件/制度/运动"
+  },
+  "entries": [
+    {
+      "canonical": "孙少平",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [
+        "少平"
+      ],
+      "frequency": 11,
+      "docs": [
+        "doc1",
+        "doc2",
+        "doc3"
+      ],
+      "description": "小说主人公，农民子弟，原西县高中毕业后当过教师、揽工汉、建筑工人和煤矿工人。"
+    },
+    {
+      "canonical": "孙少安",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [
+        "少安"
+      ],
+      "frequency": 7,
+      "docs": [
+        "doc1",
+        "doc2",
+        "doc3"
+      ],
+      "description": "孙少平之兄，双水村农民，后带头实行责任制并经营砖窑。"
+    },
+    {
+      "canonical": "田润叶",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [
+        "润叶"
+      ],
+      "frequency": 6,
+      "docs": [
+        "doc1",
+        "doc2",
+        "doc3"
+      ],
+      "description": "田福堂之女，县城教师，后调团地委工作，李向前之妻。"
+    },
+    {
+      "canonical": "田晓霞",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [
+        "晓霞"
+      ],
+      "frequency": 5,
+      "docs": [
+        "doc1",
+        "doc2",
+        "doc3"
+      ],
+      "description": "田福军之女，师范专科学校毕业后任省报记者，孙少平的恋人。"
+    },
+    {
+      "canonical": "田福堂",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 5,
+      "docs": [
+        "doc1",
+        "doc2"
+      ],
+      "description": "双水村党支部书记，田润叶之父、田润生之父，思想保守。"
+    },
+    {
+      "canonical": "郝红梅",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 5,
+      "docs": [
+        "doc1",
+        "doc2",
+        "doc3"
+      ],
+      "description": "孙少平的高中同学，地主家庭出身，后与顾养民恋爱、与田润生结婚。"
+    },
+    {
+      "canonical": "田润生",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [
+        "润生"
+      ],
+      "frequency": 2,
+      "docs": [
+        "doc2",
+        "doc3"
+      ],
+      "description": "田润叶之弟，后与郝红梅结为夫妻。"
+    },
+    {
+      "canonical": "田福军",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 2,
+      "docs": [
+        "doc1",
+        "doc3"
+      ],
+      "description": "县革委副主任，田晓霞之父。"
+    },
+    {
+      "canonical": "秀莲",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 2,
+      "docs": [
+        "doc1",
+        "doc3"
+      ],
+      "description": "孙少安的妻子，勤劳善良，山西人。"
+    },
+    {
+      "canonical": "侯玉英",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "孙少平的高中同班同学。"
+    },
+    {
+      "canonical": "李向前",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "田润叶的丈夫，婚后因酒后开车致残。"
+    },
+    {
+      "canonical": "金波之妹",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "金波的妹妹，曾向孙少平表白。"
+    },
+    {
+      "canonical": "顾养民",
+      "type": "PER",
+      "type_cn": "人物",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "家境优越，曾与郝红梅恋爱。"
+    },
+    {
+      "canonical": "山西",
+      "type": "LOC",
+      "type_cn": "地点",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "秀莲的家乡，孙少安到此相亲。"
+    },
+    {
+      "canonical": "矿山",
+      "type": "LOC",
+      "type_cn": "地点",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少平工作、受伤后重返的矿区。"
+    },
+    {
+      "canonical": "砖窑",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 2,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少安经营、后贷款扩建的砖窑。"
+    },
+    {
+      "canonical": "公社",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "人民公社，孙少安因建窑烧砖成为“冒尖户”。"
+    },
+    {
+      "canonical": "医院",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少平受伤后治疗的医院。"
+    },
+    {
+      "canonical": "原西县高中",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "孙少平就读的高中。"
+    },
+    {
+      "canonical": "县革委",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "县级革命委员会，田福军任副主任。"
+    },
+    {
+      "canonical": "团地委",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "田润叶离开县城后工作的共青团地区委员会。"
+    },
+    {
+      "canonical": "小学",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少安出资一万五千元扩建的小学。"
+    },
+    {
+      "canonical": "师专",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "田晓霞就读的师范专科学校。"
+    },
+    {
+      "canonical": "煤矿",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少平工作所在的煤矿。"
+    },
+    {
+      "canonical": "生产队",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "农村人民公社下的基层生产组织，孙少安曾领导生产队。"
+    },
+    {
+      "canonical": "省报",
+      "type": "ORG",
+      "type_cn": "组织机构",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "田晓霞毕业后任记者的省级报社。"
+    },
+    {
+      "canonical": "1975年初",
+      "type": "TIME",
+      "type_cn": "时间",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "第一部故事开端的时间。"
+    },
+    {
+      "canonical": "1979年春",
+      "type": "TIME",
+      "type_cn": "时间",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "第二部故事开端的时间，十一届三中全会之后。"
+    },
+    {
+      "canonical": "1982年",
+      "type": "TIME",
+      "type_cn": "时间",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "第三部故事开端的时间，孙少平到煤矿。"
+    },
+    {
+      "canonical": "27岁",
+      "type": "TIME",
+      "type_cn": "时间",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少平在事故中受伤时的年龄。"
+    },
+    {
+      "canonical": "两年后",
+      "type": "TIME",
+      "type_cn": "时间",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "孙少平与田晓霞相约再相会的时间。"
+    },
+    {
+      "canonical": "责任制",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 2,
+      "docs": [
+        "doc2"
+      ],
+      "description": "农村家庭联产承包责任制，孙少安率先实行。"
+    },
+    {
+      "canonical": "事故",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "孙少平为救护徒弟而受重伤的矿井事故。"
+    },
+    {
+      "canonical": "农业学大寨",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "特定历史时期的农业运动，田福堂炸山修田即以此为名。"
+    },
+    {
+      "canonical": "十一届三中全会",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "1978年底召开的重要会议，开启改革开放。"
+    },
+    {
+      "canonical": "变革",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "新时期农村生产关系的变革。"
+    },
+    {
+      "canonical": "抗洪采访",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc3"
+      ],
+      "description": "田晓霞为抢救灾民牺牲时所执行的采访任务。"
+    },
+    {
+      "canonical": "支部会",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc2"
+      ],
+      "description": "田福堂连夜召开、抵制责任制的党支部会议。"
+    },
+    {
+      "canonical": "旱灾",
+      "type": "EVENT",
+      "type_cn": "事件/制度/运动",
+      "aliases": [],
+      "frequency": 1,
+      "docs": [
+        "doc1"
+      ],
+      "description": "农村遭遇的自然灾害。"
+    }
+  ],
+  "stats": {
+    "entity_count": 39,
+    "mention_count": 77,
+    "type_counts": {
+      "PER": 13,
+      "LOC": 2,
+      "ORG": 11,
+      "TIME": 5,
+      "EVENT": 8
+    }
+  }
+}

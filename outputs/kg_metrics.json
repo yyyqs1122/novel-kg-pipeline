@@ -1,0 +1,344 @@
+{
+  "pipeline": {
+    "build": {
+      "build_ms": 3966.8,
+      "node_count": 39,
+      "rel_count": 33,
+      "mention_count": 53,
+      "db_size_bytes": 1003520
+    },
+    "label_counts": {
+      "PER": 13,
+      "LOC": 2,
+      "ORG": 11,
+      "TIME": 5,
+      "EVENT": 8
+    },
+    "relation_counts": {
+      "参与": 5,
+      "任职于": 6,
+      "朋友": 1,
+      "恋人": 3,
+      "同学": 2,
+      "暗恋": 3,
+      "就读于": 2,
+      "资助": 1,
+      "拥有": 1,
+      "夫妻": 3,
+      "兄弟姐妹": 2,
+      "反对": 2,
+      "父女": 2
+    },
+    "isolated_entities": [
+      "1975年初",
+      "1979年春",
+      "1982年",
+      "27岁",
+      "两年后",
+      "公社",
+      "医院",
+      "十一届三中全会",
+      "山西",
+      "旱灾"
+    ],
+    "quality_entities": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 39,
+      "fp": 0,
+      "fn": 0,
+      "gold": 39,
+      "pred": 39,
+      "extra": [],
+      "missing": []
+    },
+    "quality_relations": {
+      "precision": 0.9697,
+      "recall": 0.9697,
+      "f1": 0.9697,
+      "tp": 32,
+      "fp": 1,
+      "fn": 1,
+      "gold": 33,
+      "pred": 33,
+      "extra": [
+        "孙少平-任职于-矿山"
+      ],
+      "missing": [
+        "田福堂-父子-田润生"
+      ]
+    },
+    "structure": {
+      "nodes": 39,
+      "edges": 33,
+      "density": 0.0223,
+      "avg_degree": 1.692,
+      "isolated_nodes": [
+        "1975年初",
+        "1979年春",
+        "1982年",
+        "27岁",
+        "两年后",
+        "公社",
+        "医院",
+        "十一届三中全会",
+        "山西",
+        "旱灾"
+      ],
+      "isolated_count": 10,
+      "type_counts": {
+        "PER": 13,
+        "LOC": 2,
+        "ORG": 11,
+        "TIME": 5,
+        "EVENT": 8
+      },
+      "relation_counts": {
+        "就读于": 2,
+        "暗恋": 3,
+        "同学": 2,
+        "恋人": 3,
+        "朋友": 1,
+        "父女": 2,
+        "任职于": 6,
+        "兄弟姐妹": 2,
+        "夫妻": 3,
+        "参与": 5,
+        "反对": 2,
+        "拥有": 1,
+        "资助": 1
+      }
+    },
+    "neo4j_queries": {
+      "q1_neighbors": {
+        "avg_ms": 6.214,
+        "p95_ms": 10.061,
+        "rows": 10,
+        "sample": [
+          {
+            "relation": "参与",
+            "other": "事故"
+          },
+          {
+            "relation": "同学",
+            "other": "侯玉英"
+          }
+        ]
+      },
+      "q2_children": {
+        "avg_ms": 4.316,
+        "p95_ms": 7.857,
+        "rows": 1,
+        "sample": [
+          {
+            "child": "田润叶"
+          }
+        ]
+      },
+      "q3_event_participants": {
+        "avg_ms": 4.506,
+        "p95_ms": 6.022,
+        "rows": 5,
+        "sample": [
+          {
+            "person": "孙少安",
+            "event": "责任制"
+          },
+          {
+            "person": "孙少平",
+            "event": "事故"
+          }
+        ]
+      },
+      "q4_two_hop": {
+        "avg_ms": 9.141,
+        "p95_ms": 15.86,
+        "rows": 38,
+        "sample": [
+          {
+            "other": "1975年初"
+          },
+          {
+            "other": "1979年春"
+          }
+        ]
+      },
+      "q5_relation_counts": {
+        "avg_ms": 4.85,
+        "p95_ms": 7.887,
+        "rows": 13,
+        "sample": [
+          {
+            "relation": "任职于",
+            "count": 6
+          },
+          {
+            "relation": "参与",
+            "count": 5
+          }
+        ]
+      },
+      "q6_shortest_path": {
+        "avg_ms": 5.217,
+        "p95_ms": 9.098,
+        "rows": 1,
+        "sample": [
+          {
+            "hops": 2
+          }
+        ]
+      }
+    },
+    "json_queries": {
+      "q1_neighbors": {
+        "avg_ms": 0.0006,
+        "p95_ms": 0.0005,
+        "rows": 10
+      },
+      "q2_children": {
+        "avg_ms": 0.0009,
+        "p95_ms": 0.001,
+        "rows": 1
+      },
+      "q3_event_participants": {
+        "avg_ms": 0.0009,
+        "p95_ms": 0.001,
+        "rows": 5
+      },
+      "q4_two_hop": {
+        "avg_ms": 0.0037,
+        "p95_ms": 0.0038,
+        "rows": 21
+      },
+      "q5_relation_counts": {
+        "avg_ms": 0.0023,
+        "p95_ms": 0.0026,
+        "rows": 13
+      },
+      "q6_shortest_path": {
+        "avg_ms": 0.0046,
+        "p95_ms": 0.004,
+        "rows": 1
+      }
+    }
+  },
+  "llm": {
+    "generation_ms": 53956,
+    "node_count": 44,
+    "edge_count": 38,
+    "quality_entities": {
+      "precision": 0.8864,
+      "recall": 1.0,
+      "f1": 0.9398,
+      "tp": 39,
+      "fp": 5,
+      "fn": 0,
+      "gold": 39,
+      "pred": 44,
+      "extra": [
+        "原西县(LOC)",
+        "双水村(LOC)",
+        "孙玉厚(PER)",
+        "村党支部(ORG)",
+        "金波(PER)"
+      ],
+      "missing": []
+    },
+    "quality_relations": {
+      "precision": 0.8684,
+      "recall": 1.0,
+      "f1": 0.9296,
+      "tp": 33,
+      "fp": 5,
+      "fn": 0,
+      "gold": 33,
+      "pred": 38,
+      "extra": [
+        "孙少安-父子-孙玉厚",
+        "孙少平-朋友-金波",
+        "孙少平-父子-孙玉厚",
+        "田福堂-任职于-村党支部",
+        "金波-兄弟姐妹-金波之妹"
+      ],
+      "missing": []
+    },
+    "structure": {
+      "nodes": 44,
+      "edges": 38,
+      "density": 0.0201,
+      "avg_degree": 1.727,
+      "isolated_nodes": [
+        "1975年初",
+        "1979年春",
+        "1982年",
+        "27岁",
+        "两年后",
+        "公社",
+        "医院",
+        "十一届三中全会",
+        "原西县",
+        "双水村",
+        "山西",
+        "旱灾",
+        "矿山"
+      ],
+      "isolated_count": 13,
+      "type_counts": {
+        "PER": 15,
+        "LOC": 4,
+        "ORG": 12,
+        "TIME": 5,
+        "EVENT": 8
+      },
+      "relation_counts": {
+        "就读于": 2,
+        "暗恋": 3,
+        "同学": 2,
+        "恋人": 3,
+        "朋友": 2,
+        "父女": 2,
+        "任职于": 6,
+        "兄弟姐妹": 3,
+        "夫妻": 3,
+        "参与": 5,
+        "反对": 2,
+        "父子": 3,
+        "拥有": 1,
+        "资助": 1
+      }
+    },
+    "json_queries": {
+      "q1_neighbors": {
+        "avg_ms": 0.0005,
+        "p95_ms": 0.0005,
+        "rows": 11
+      },
+      "q2_children": {
+        "avg_ms": 0.001,
+        "p95_ms": 0.0012,
+        "rows": 2
+      },
+      "q3_event_participants": {
+        "avg_ms": 0.0009,
+        "p95_ms": 0.001,
+        "rows": 5
+      },
+      "q4_two_hop": {
+        "avg_ms": 0.0044,
+        "p95_ms": 0.0044,
+        "rows": 22
+      },
+      "q5_relation_counts": {
+        "avg_ms": 0.0025,
+        "p95_ms": 0.0027,
+        "rows": 14
+      },
+      "q6_shortest_path": {
+        "avg_ms": 0.004,
+        "p95_ms": 0.0042,
+        "rows": 1
+      }
+    }
+  }
+}

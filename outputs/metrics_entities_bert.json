@@ -1,0 +1,139 @@
+{
+  "overall": {
+    "precision": 0.8158,
+    "recall": 0.5849,
+    "f1": 0.6813,
+    "tp": 31,
+    "fp": 7,
+    "fn": 22
+  },
+  "macro_f1": 0.3724,
+  "per_type": {
+    "PER": {
+      "precision": 0.9286,
+      "recall": 0.963,
+      "f1": 0.9455,
+      "tp": 26,
+      "fp": 2,
+      "fn": 1,
+      "gold": 27,
+      "pred": 28
+    },
+    "LOC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 2,
+      "gold": 2,
+      "pred": 1
+    },
+    "ORG": {
+      "precision": 0.4,
+      "recall": 0.1818,
+      "f1": 0.25,
+      "tp": 2,
+      "fp": 3,
+      "fn": 9,
+      "gold": 11,
+      "pred": 5
+    },
+    "TIME": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6667,
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "gold": 5,
+      "pred": 4
+    },
+    "EVENT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8,
+      "gold": 8,
+      "pred": 0
+    }
+  },
+  "per_doc": {
+    "doc1": {
+      "precision": 0.8,
+      "recall": 0.7059,
+      "f1": 0.75,
+      "tp": 12,
+      "fp": 3,
+      "fn": 5
+    },
+    "doc2": {
+      "precision": 0.8333,
+      "recall": 0.5556,
+      "f1": 0.6667,
+      "tp": 10,
+      "fp": 2,
+      "fn": 8
+    },
+    "doc3": {
+      "precision": 0.8182,
+      "recall": 0.5,
+      "f1": 0.6207,
+      "tp": 9,
+      "fp": 2,
+      "fn": 9
+    }
+  },
+  "errors": {
+    "doc1": {
+      "missing": [
+        "农业学大寨(EVENT)",
+        "原西县高中(ORG)",
+        "县革委(ORG)",
+        "山西(LOC)",
+        "旱灾(EVENT)"
+      ],
+      "extra": [
+        "——县城(ORG)",
+        "原西(LOC)",
+        "县革(ORG)"
+      ]
+    },
+    "doc2": {
+      "missing": [
+        "两年后(TIME)",
+        "公社(ORG)",
+        "十一届三中全会(EVENT)",
+        "变革(EVENT)",
+        "师专(ORG)",
+        "支部会(EVENT)",
+        "生产队(ORG)",
+        "责任制(EVENT)"
+      ],
+      "extra": [
+        "三中(TIME)",
+        "煤矿(ORG)"
+      ]
+    },
+    "doc3": {
+      "missing": [
+        "27岁(TIME)",
+        "事故(EVENT)",
+        "医院(ORG)",
+        "小学(ORG)",
+        "抗洪采访(EVENT)",
+        "煤矿(ORG)",
+        "矿山(LOC)",
+        "砖窑(ORG)",
+        "金波之妹(PER)"
+      ],
+      "extra": [
+        "少时(PER)",
+        "金波(PER)"
+      ]
+    }
+  },
+  "pred_entity_mentions": 60
+}

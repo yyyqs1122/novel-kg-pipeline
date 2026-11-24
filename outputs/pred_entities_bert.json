@@ -1,0 +1,326 @@
+{
+  "method": "BERT (bert-base-chinese, BIO, 5-fold sentence CV)",
+  "model": "bert-base-chinese",
+  "epochs": 6,
+  "folds": [
+    {
+      "fold": 1,
+      "train_sentences": 19,
+      "test_sentences": 5,
+      "loss_curve": [
+        1.6072,
+        0.5897,
+        0.2651,
+        0.119,
+        0.0593,
+        0.0273
+      ],
+      "pred_mentions": 14
+    },
+    {
+      "fold": 2,
+      "train_sentences": 19,
+      "test_sentences": 5,
+      "loss_curve": [
+        1.6894,
+        0.8768,
+        0.4685,
+        0.2358,
+        0.1125,
+        0.0592
+      ],
+      "pred_mentions": 15
+    },
+    {
+      "fold": 3,
+      "train_sentences": 19,
+      "test_sentences": 5,
+      "loss_curve": [
+        1.8685,
+        0.8536,
+        0.4203,
+        0.2055,
+        0.1223,
+        0.0546
+      ],
+      "pred_mentions": 13
+    },
+    {
+      "fold": 4,
+      "train_sentences": 19,
+      "test_sentences": 5,
+      "loss_curve": [
+        1.7957,
+        0.7081,
+        0.3413,
+        0.1517,
+        0.0594,
+        0.0596
+      ],
+      "pred_mentions": 10
+    },
+    {
+      "fold": 5,
+      "train_sentences": 20,
+      "test_sentences": 4,
+      "loss_curve": [
+        1.9382,
+        0.8998,
+        0.44,
+        0.2131,
+        0.0875,
+        0.0704
+      ],
+      "pred_mentions": 8
+    }
+  ],
+  "elapsed_sec": 378.59,
+  "docs": {
+    "doc1": [
+      {
+        "text": "1975年初",
+        "type": "TIME"
+      },
+      {
+        "text": "孙少平",
+        "type": "PER"
+      },
+      {
+        "text": "原西",
+        "type": "LOC"
+      },
+      {
+        "text": "郝红梅",
+        "type": "PER"
+      },
+      {
+        "text": "侯玉英",
+        "type": "PER"
+      },
+      {
+        "text": "郝红梅",
+        "type": "PER"
+      },
+      {
+        "text": "郝红梅",
+        "type": "PER"
+      },
+      {
+        "text": "顾养民",
+        "type": "PER"
+      },
+      {
+        "text": "少安",
+        "type": "PER"
+      },
+      {
+        "text": "润叶",
+        "type": "PER"
+      },
+      {
+        "text": "田福堂",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "县革",
+        "type": "ORG"
+      },
+      {
+        "text": "田福军",
+        "type": "PER"
+      },
+      {
+        "text": "田晓霞",
+        "type": "PER"
+      },
+      {
+        "text": "晓霞",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "少安",
+        "type": "PER"
+      },
+      {
+        "text": "田福堂",
+        "type": "PER"
+      },
+      {
+        "text": "——县城",
+        "type": "ORG"
+      },
+      {
+        "text": "田润叶",
+        "type": "PER"
+      },
+      {
+        "text": "田福堂",
+        "type": "PER"
+      },
+      {
+        "text": "少安",
+        "type": "PER"
+      },
+      {
+        "text": "秀莲",
+        "type": "PER"
+      },
+      {
+        "text": "润叶",
+        "type": "PER"
+      },
+      {
+        "text": "李向前",
+        "type": "PER"
+      }
+    ],
+    "doc2": [
+      {
+        "text": "1979年春",
+        "type": "TIME"
+      },
+      {
+        "text": "三中",
+        "type": "TIME"
+      },
+      {
+        "text": "田福堂",
+        "type": "PER"
+      },
+      {
+        "text": "孙少安",
+        "type": "PER"
+      },
+      {
+        "text": "田福堂",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "煤矿",
+        "type": "ORG"
+      },
+      {
+        "text": "晓霞",
+        "type": "PER"
+      },
+      {
+        "text": "省报",
+        "type": "ORG"
+      },
+      {
+        "text": "少安",
+        "type": "PER"
+      },
+      {
+        "text": "润生",
+        "type": "PER"
+      },
+      {
+        "text": "郝红梅",
+        "type": "PER"
+      },
+      {
+        "text": "润叶",
+        "type": "PER"
+      },
+      {
+        "text": "团地委",
+        "type": "ORG"
+      },
+      {
+        "text": "润叶",
+        "type": "PER"
+      }
+    ],
+    "doc3": [
+      {
+        "text": "孙少平",
+        "type": "PER"
+      },
+      {
+        "text": "田晓霞",
+        "type": "PER"
+      },
+      {
+        "text": "田晓霞",
+        "type": "PER"
+      },
+      {
+        "text": "田福军",
+        "type": "PER"
+      },
+      {
+        "text": "孙少平",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "润叶",
+        "type": "PER"
+      },
+      {
+        "text": "润生",
+        "type": "PER"
+      },
+      {
+        "text": "郝红梅",
+        "type": "PER"
+      },
+      {
+        "text": "1982年",
+        "type": "TIME"
+      },
+      {
+        "text": "孙少平",
+        "type": "PER"
+      },
+      {
+        "text": "少安",
+        "type": "PER"
+      },
+      {
+        "text": "秀莲",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "少时",
+        "type": "PER"
+      },
+      {
+        "text": "金波",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "少平",
+        "type": "PER"
+      },
+      {
+        "text": "少安",
+        "type": "PER"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+models/
+runtime/
+outputs/*.log
+outputs/*_smoke*.json
+outputs/*_smoke*.txt
+*.egg-info/
+.DS_Store
