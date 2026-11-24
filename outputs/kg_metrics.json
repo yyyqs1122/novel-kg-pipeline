@@ -1,11 +1,11 @@
 {
   "pipeline": {
     "build": {
-      "build_ms": 3966.8,
+      "build_ms": 2529.5,
       "node_count": 39,
       "rel_count": 33,
       "mention_count": 53,
-      "db_size_bytes": 1003520
+      "db_size_bytes": 1134592
     },
     "label_counts": {
       "PER": 13,
@@ -112,8 +112,8 @@
     },
     "neo4j_queries": {
       "q1_neighbors": {
-        "avg_ms": 6.214,
-        "p95_ms": 10.061,
+        "avg_ms": 3.25,
+        "p95_ms": 4.24,
         "rows": 10,
         "sample": [
           {
@@ -127,8 +127,8 @@
         ]
       },
       "q2_children": {
-        "avg_ms": 4.316,
-        "p95_ms": 7.857,
+        "avg_ms": 3.732,
+        "p95_ms": 7.219,
         "rows": 1,
         "sample": [
           {
@@ -137,8 +137,8 @@
         ]
       },
       "q3_event_participants": {
-        "avg_ms": 4.506,
-        "p95_ms": 6.022,
+        "avg_ms": 2.766,
+        "p95_ms": 4.669,
         "rows": 5,
         "sample": [
           {
@@ -152,21 +152,21 @@
         ]
       },
       "q4_two_hop": {
-        "avg_ms": 9.141,
-        "p95_ms": 15.86,
-        "rows": 38,
+        "avg_ms": 5.044,
+        "p95_ms": 8.029,
+        "rows": 21,
         "sample": [
           {
-            "other": "1975年初"
+            "other": "事故"
           },
           {
-            "other": "1979年春"
+            "other": "侯玉英"
           }
         ]
       },
       "q5_relation_counts": {
-        "avg_ms": 4.85,
-        "p95_ms": 7.887,
+        "avg_ms": 2.639,
+        "p95_ms": 4.201,
         "rows": 13,
         "sample": [
           {
@@ -180,8 +180,8 @@
         ]
       },
       "q6_shortest_path": {
-        "avg_ms": 5.217,
-        "p95_ms": 9.098,
+        "avg_ms": 2.837,
+        "p95_ms": 3.051,
         "rows": 1,
         "sample": [
           {
@@ -192,33 +192,33 @@
     },
     "json_queries": {
       "q1_neighbors": {
-        "avg_ms": 0.0006,
+        "avg_ms": 0.0005,
         "p95_ms": 0.0005,
         "rows": 10
       },
       "q2_children": {
-        "avg_ms": 0.0009,
+        "avg_ms": 0.0013,
         "p95_ms": 0.001,
         "rows": 1
       },
       "q3_event_participants": {
-        "avg_ms": 0.0009,
+        "avg_ms": 0.0024,
         "p95_ms": 0.001,
         "rows": 5
       },
       "q4_two_hop": {
-        "avg_ms": 0.0037,
-        "p95_ms": 0.0038,
+        "avg_ms": 0.0039,
+        "p95_ms": 0.004,
         "rows": 21
       },
       "q5_relation_counts": {
         "avg_ms": 0.0023,
-        "p95_ms": 0.0026,
+        "p95_ms": 0.0025,
         "rows": 13
       },
       "q6_shortest_path": {
-        "avg_ms": 0.0046,
-        "p95_ms": 0.004,
+        "avg_ms": 0.0033,
+        "p95_ms": 0.0036,
         "rows": 1
       }
     }
@@ -316,27 +316,27 @@
       },
       "q2_children": {
         "avg_ms": 0.001,
-        "p95_ms": 0.0012,
+        "p95_ms": 0.0011,
         "rows": 2
       },
       "q3_event_participants": {
-        "avg_ms": 0.0009,
-        "p95_ms": 0.001,
+        "avg_ms": 0.001,
+        "p95_ms": 0.0011,
         "rows": 5
       },
       "q4_two_hop": {
         "avg_ms": 0.0044,
-        "p95_ms": 0.0044,
+        "p95_ms": 0.0043,
         "rows": 22
       },
       "q5_relation_counts": {
-        "avg_ms": 0.0025,
-        "p95_ms": 0.0027,
+        "avg_ms": 0.0026,
+        "p95_ms": 0.0028,
         "rows": 14
       },
       "q6_shortest_path": {
-        "avg_ms": 0.004,
-        "p95_ms": 0.0042,
+        "avg_ms": 0.0037,
+        "p95_ms": 0.0039,
         "rows": 1
       }
     }

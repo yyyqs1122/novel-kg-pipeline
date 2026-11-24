@@ -56,7 +56,7 @@ def stage_relations(fast: bool, skip_bert: bool) -> None:
     run("spacy_re.py")
     evaluate("outputs/pred_triples_spacy.json", "triple", "outputs/metrics_triples_spacy.json")
     if not skip_bert:
-        run("bert_re.py", "--epochs", "2" if fast else "8",
+        run("bert_re.py", "--epochs", "2" if fast else "3",
             "--folds", "2" if fast else "5", "--out", "../outputs/pred_triples_bert.json")
         evaluate("outputs/pred_triples_bert.json", "triple", "outputs/metrics_triples_bert.json")
     evaluate("data/annotated/llm_triples.json", "triple", "outputs/metrics_triples_llm.json")

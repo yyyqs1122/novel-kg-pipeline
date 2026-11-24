@@ -115,11 +115,13 @@ def neo4j_benchmark():
                         "ORDER BY child", {"name": "田福堂"}),
         "q3_event_participants": ("MATCH (p:Entity:PER)-[r:参与]->(e:Entity:EVENT) RETURN p.name AS person, "
                                   "e.name AS event ORDER BY person LIMIT 50", {}),
-        "q4_two_hop": ("MATCH path=(a:Entity {name:$name})-[*1..2]-(b:Entity) WHERE b.name <> $name "
+        "q4_two_hop": ("MATCH path=(a:Entity {name:$name})-[*1..2]-(b:Entity) "
+                       "WHERE b.name <> $name AND all(r IN relationships(path) WHERE type(r) <> 'MENTIONS') "
                        "RETURN DISTINCT b.name AS other ORDER BY other LIMIT 50", {"name": "孙少平"}),
         "q5_relation_counts": ("MATCH ()-[r]->() WHERE type(r) <> 'MENTIONS' RETURN type(r) AS relation, "
                                "count(*) AS count ORDER BY count DESC", {}),
         "q6_shortest_path": ("MATCH (a:Entity {name:$a}),(b:Entity {name:$b}), p=shortestPath((a)-[*..6]-(b)) "
+                             "WHERE all(r IN relationships(p) WHERE type(r) <> 'MENTIONS') "
                              "RETURN length(p) AS hops", {"a": "孙少平", "b": "田福军"}),
     }
     out = {}
@@ -215,6 +217,9 @@ def json_benchmark(path):
 def export_cypher(nodes, edges, docs, mention_rows, path):
     def q(s):
         return "'" + str(s).replace("\\", "\\\\").replace("'", "\\'") + "'"
+
+    def qlist(items):
+        return "[" + ", ".join(q(x) for x in items) + "]"
     lines = ["// 平凡的世界（三段梗概）知识图谱", "// 自动生成，可直接在 Neo4j Browser 中执行",
              "CREATE CONSTRAINT entity_name IF NOT EXISTS ON (n:Entity) ASSERT n.name IS UNIQUE;",
              "CREATE INDEX entity_type IF NOT EXISTS FOR (n:Entity) ON (n.type);", ""]
@@ -222,7 +227,7 @@ def export_cypher(nodes, edges, docs, mention_rows, path):
         lines.append(
             f"MERGE (n:Entity:{n['type']} {{name:{q(n['name'])}}}) SET n.type={q(n['type'])}, "
             f"n.type_cn={q(n['type_cn'])}, n.description={q(n['description'])}, "
-            f"n.aliases={q(n['aliases'])}, n.frequency={n['frequency']}, n.docs={q(n['docs'])};"
+            f"n.aliases={qlist(n['aliases'])}, n.frequency={n['frequency']}, n.docs={qlist(n['docs'])};"
         )
     lines.append("")
     for d in docs:
@@ -233,7 +238,7 @@ def export_cypher(nodes, edges, docs, mention_rows, path):
     lines.append("")
     for e in edges:
         lines.append(f"MATCH (h:Entity {{name:{q(e['head'])}}}),(t:Entity {{name:{q(e['tail'])}}}) "
-                     f"MERGE (h)-[r:`{e['relation']}`]->(t) SET r.sources={q(e['sources'])}, "
+                     f"MERGE (h)-[r:`{e['relation']}`]->(t) SET r.sources={qlist(e['sources'])}, "
                      f"r.confidence={e['confidence']}, r.evidence={q(e['evidence'])};")
     (ROOT / path).write_text("\n".join(lines) + "\n", encoding="utf-8")
 
